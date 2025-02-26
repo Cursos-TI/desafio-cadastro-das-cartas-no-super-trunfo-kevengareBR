@@ -49,7 +49,7 @@ void cadastrarCidade(Estado *estado, int num_cidade) {
 
     // Coleta informações da cidade
     printf("Nome da cidade: ");
-    scanf(" %d[^\n]", cidade->nome);  // Leitura do nome da cidade (permitindo espaços)
+    scanf(" %[^\n]", cidade->nome);  // Leitura do nome da cidade (permitindo espaços)
 
     printf("População: ");
     scanf("%d", &cidade->populacao);
