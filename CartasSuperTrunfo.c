@@ -16,7 +16,7 @@ typedef struct {
 void cadastrarCidade(Cidade *cidade) {
     // Solicitando e armazenando o nome da cidade
     printf("Nome da cidade: ");
-    scanf(" %d[^\n]", cidade->nome); // %[^\n] permite ler uma string com espaços
+    scanf(" %[^\n]", cidade->nome); // %[^\n] permite ler uma string com espaços
 
     // Solicitando e armazenando a população da cidade
     printf("População: ");
